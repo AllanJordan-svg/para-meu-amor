@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+  <title>Feliz Dia dos Namorados, Luuck!</title>
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffe6f0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #4a004a;
+      overflow-x: hidden;
+    }
+
+    .hearts {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #ff3366;
+      transform: rotate(45deg);
+      animation: float 10s linear infinite;
+    }
+
+    .heart::before,
+    .heart::after {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #ff3366;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      top: 0;
+      left: -10px;
+    }
+
+    @keyframes float {
+      0% {
+        transform: translateY(100vh) rotate(45deg);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) rotate(45deg);
+        opacity: 0;
+      }
+    }
+
+    .container {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 100px auto 40px;
+      padding: 40px;
+      background: #fff0f5;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 105, 180, 0.3);
+      border-bottom: 8px solid #ff66a3;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      margin-bottom: 20px;
+      color: #d1006b;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      text-align: justify;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 0 20px 40px;
+    }
+
+    .gallery img {
+      width: 250px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 40px auto;
+  max-width: 100%;
+  padding: 0 20px 40px;
+}
+
+.gallery figure {
+  margin: 0;
+  text-align: center;
+  flex: 1 1 250px;
+  max-width: 300px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.gallery figcaption {
+  margin-top: 8px;
+  font-size: 16px;
+  font-style: italic;
+  color: #a00055;
+  word-wrap: break-word;
+}
+  </style>
+</head>
+<body>
+  <div class="hearts">
+    <script>
+      for (let i = 0; i < 30; i++) {
+        const heart = document.createElement('div');
+        heart.className = 'heart';
+        heart.style.left = Math.random() * 100 + 'vw';
+        heart.style.animationDuration = (5 + Math.random() * 5) + 's';
+        heart.style.opacity = Math.random();
+        document.querySelector('.hearts').appendChild(heart);
+      }
+    </script>
+  </div>
+
+  <div class="container">
+      <h1>Para você, Luuck ❤️</h1>
+    <p>
+      Hoje é Dia dos Namorados… Mas, sinceramente? Para mim, todo dia ao seu lado é uma celebração do amor, da vida e da sorte imensa que tenho por ter você comigo.
+    </p>
+    <p>
+      Luuck, amar você é como respirar: natural, essencial e constante. É como ouvir minha música favorita em looping e nunca enjoar. Desde que você chegou, tudo mudou dentro e fora de mim. O mundo ficou mais bonito, os dias mais leves, e até as dificuldades parecem menores quando sei que tenho você ao meu lado.
+    </p>
+    <p>
+      Você é abrigo e tempestade. É calmaria e intensidade. É meu ponto de paz e, ao mesmo tempo, o motivo das minhas borboletas no estômago. Amo o seu jeito único de ser, sua risada que ecoa nos meus pensamentos, seu olhar que diz tudo sem precisar de palavras. Você é meu presente mais precioso, a resposta que a vida me deu quando eu menos esperava.
+    </p>
+    <p>
+      Contigo aprendi que amar não é só sobre dizer “eu te amo”, mas provar isso todos os dias com atitudes, com presença, com apoio, com paciência e, principalmente, com verdade. Amar você é me redescobrir, é crescer, é querer ser melhor. É encontrar sentido até nas coisas mais simples, só porque estou ao seu lado.
+    </p>
+    <p>
+      Neste Dia dos Namorados, quero te agradecer… Por ser exatamente quem você é. Por me amar nos meus dias bons e me abraçar nos dias ruins. Por ser meu parceiro, meu melhor amigo, meu porto seguro.
+    </p>
+    <p>
+      Luuck, eu te amo com tudo o que sou, e te escolho — hoje, amanhã, e em todos os dias que ainda virão. Que a vida nos permita sempre caminhar juntos, lado a lado, de mãos dadas, com o coração tranquilo e cheio de amor.
+    </p>
+    <p style="text-align: center; font-weight: bold; font-size: 20px;">
+      Feliz Dia dos Namorados, meu amor!<br>
+      Com amor infinito,<br>
+      <em>❧JA❧</em>
+    </p>
+  </div>
+
+  <!-- Galeria de Fotos -->
+<div class="gallery">
+ <div class="gallery">
+  <figure>
+    <img src="IMG_20240801_203333_866.webp" alt="Foto 1 do casal">
+    <figcaption>Nosso primeiro passeio juntos 💕</figcaption>
+  </figure>
+  <figure>
+    <img src="IMG_20240810_212250_322.webp" alt="Foto 2 do casal">
+    <figcaption>Um momento inesquecível 🥰</figcaption>
+  </figure>
+  <figure>
+    <img src="IMG_20250215_222618_404.webp" alt="Foto 3 do casal">
+    <figcaption>O sorriso que eu mais amo ❤️</figcaption>
+  </figure>
+</div>
+</body>
+</html>
+<a href="paraluuck.github.io/meu-site/" target="_blank"></a>
